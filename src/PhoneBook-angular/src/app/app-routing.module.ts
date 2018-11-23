@@ -19,7 +19,7 @@ import { PersonsComponent } from './persons/persons.component';
                     { path: 'home', component: HomeComponent,  canActivate: [AppRouteGuard] },
                     { path: 'users', component: UsersComponent, data: { permission: 'Pages.Users' }, canActivate: [AppRouteGuard] },
                     { path: 'roles', component: RolesComponent, data: { permission: 'Pages.Roles' }, canActivate: [AppRouteGuard] },
-                    { path: 'person', component: PersonsComponent, data: { permission: 'Pages.Person' }, canActivate: [AppRouteGuard] },
+                    { path: 'persons', component: PersonsComponent, data: { permission: 'Pages.Person' }, canActivate: [AppRouteGuard] },
                     { path: 'tenants', component: TenantsComponent, data: { permission: 'Pages.Tenants' }, canActivate: [AppRouteGuard] },
                     { path: 'about', component: AboutComponent }
                 ]
