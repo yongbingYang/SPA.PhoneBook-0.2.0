@@ -31,7 +31,8 @@ people:PersonListDto[] = [];
     this._personService.getPagedPersons(this.filter,'Id',request.maxResultCount,request.skipCount).finally(()=>{
       finishedCallback();
     }).subscribe((result:PagedResultDtoOfPersonListDto)=>{
-
+      this.people = result.items;
+      this.showPaging(result,pageNumber);
     })
   }
   protected delete(entity: PersonListDto): void {
